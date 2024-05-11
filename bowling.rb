@@ -24,10 +24,11 @@ end
     if second_roll == 10
       third_roll = rand(0..10)
     else
-      third_roll = rand(0..10)
+      pin_count = 10 - second_roll
+      third_roll = rand(0..pin_count)
     end
   end
-  if first_roll < 10
+  if first_roll < 10 
     second_roll = rand(0..pin_count)
     if first_roll + second_roll == 10
       third_roll = rand(0..10)
