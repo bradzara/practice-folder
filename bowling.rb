@@ -1,5 +1,5 @@
 # print ten frames into an array
-rolls = []
+rolls = [[10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 0], [10, 10, 10]]
 
 # First 9 frames
 9.times do
@@ -11,7 +11,7 @@ rolls = []
   else
     second_roll = 0
   end
-  rolls << [first_roll, second_roll]
+  # rolls << [first_roll, second_roll]
 end
 
 # Last frame
@@ -36,7 +36,7 @@ end
       third_roll = 0
     end
   end
-  rolls << [first_roll, second_roll, third_roll]
+  # rolls << [first_roll, second_roll, third_roll]
 end
 
 #calculate score
